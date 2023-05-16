@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap'); 
+/* Parte 2 del FONT para Guanabanazo -   font-family: 'Lato', sans-serif;    -*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+.header{
+    background-image: url(img/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position:relative;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+
+.menu{
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* editar nombre del logo en el ejemplo???? */
+.logo{
+    
+    color: rgb(58, 58, 32);
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo-letras {
+    color: rgb(92, 65, 65);
+    font-family: 'Lato', sans-serif;
+}
+/* editar interaccion del logo con el contenido en dispositivos */
+
+.solologo {
+    position: absolute;
+    left: 109.63px;
+    top: 50px;
+    transform: rotate(0.29deg);
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+   font-size: 25px;
+   padding:20px;
+   color: rgb(92, 65, 65);
+   display: block;
+   font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: bisque;
+}
+
+.icons{
+    display: flex;
+}
+.icons i {
+    font-size: 25px;
+    color:rgb(29, 248, 0);
+    margin-right: 15px;
+    cursor:pointer;
+}
+.icons i:hover{
+     color:black;
+     
+}
+/* configurar para que salga el menu  */
+#menu {
+    display: none;
+}
+.menu-icono {
+    width:50px
+}
+/* configurar para que salga el menu  */
+.menu label{
+    cursor:pointer;
+    display: none;
+
+}
+
+.header-txt{
+    width: 40%;
+}
+/* crear header "header-content container",para crearlo completo  */
+.header-txt h1{
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(93, 221, 178);
+    margin-bottom: 25px;
+    font-family: 'Lato', sans-serif;
+}
+.header-txt p{
+    font-size: 18px;
+    color: rgb(54, 42, 42);
+    font-weight: 700 ;
+    margin-bottom: 25px;
+    
+}
+.header-txt p a{
+    font-size: 18px;
+    color: rgb(180, 65, 65);
+    font-weight: 700 ;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(81, 192, 71);
+    
+}
+.btn-1:hover{
+    background-color: rgb(106, 218, 180);
+}
+
+
+.images {
+    width: 800px;
+    height: 380px;
+    position: absolute;
+    right: 0;
+    
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   position: relative;
+
+}
+
+.swiper-slide h3{ 
+    position:absolute;
+    left:20px;
+    bottom: 20px;
+    color:rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.rows{
+    width:180px;
+    position: absolute;
+    right: 620px;
+    bottom: 80px;
+
+}
+
+.swiper-button-prev{
+    height: 50px;
+    width:50px;
+    border: 2px solid rgb(182, 112, 56);
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-next{
+    height: 50px;
+    width:50px;
+    border: 2px solid  rgb(182, 112, 56);
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+
+.swiper-button-prev:after {
+    font-size: 25px;
+    color: rgb(182, 112, 56);
+}
+
+.swiper-button-next:after {
+    font-size: 25px;
+    color: rgb(182, 112, 56);
+}
+
+/* FORMULARIOOS */
+
+
+.contact-headings h2{
+    font-size: 3em;
+  }
+  
+  .container-contact {
+    padding: 3em;
+    margin: 0 auto;
+  
+  }
+  
+  .container-contact img {
+    width: 300px;
+    height: 350px;
+    bottom:0px;
+  
+  
+  }
+  
+  .form{
+    display: flex ;
+    flex-direction: column;
+    
+    width: 30vw;
+    margin-top: 2em ;
+  }
+  
+  .form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border:none;
+    border-bottom: 1px solid rgb(136, 116, 109) ;
+    color: rgb(0, 0, 0);
+  }
+  .form textarea {
+    height:150px;
+    background: none;
+    color:rgb(0, 0, 0);
+    padding: 1.5em;
+    border: 1px solid rgb(136, 116, 109) ;
+  }
+  
+  .btn-submit{
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgb(145, 143, 143);
+    border-radius: 10px;
+    cursor:pointer
+  }
+  
+
+
+
+
+/* aca vamos a agregar el media querie */
+
+@media(max-width:991px){
+
+    .solologo {
+        display: none;
+
+    }
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label {
+        display:initial;
+
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        backdrop-filter: blur(5px);
+        display: none;
+    }
+    #menu .navbar ul li{
+        width: 100%;
+    }
+/* alt + 126 para ese signo  */
+    #menu:checked ~ .navbar{
+        display: initial ;
+
+    }
+
+    .icons{
+        display: none;
+
+    }
+
+    .header{
+        padding: 80px 30px 50px 30px;
+        align-items: self-start;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .header-txt{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .header-txt h1{margin-bottom: 10px;}
+
+    .images{
+        position: initial;
+        width: 300px;
+        height: 300px;
+
+
+    }
+
+    .rows{
+        display: none;
+    }
+    
+}

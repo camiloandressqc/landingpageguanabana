@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guana-baná Camilo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+     
+    <link rel="stylesheet" href="style.css">
+    <!-- Librerias que usare -->
+</head>
+<body>
+    <header class="header">
+        <!-- Crear un div con clase logo img para solo la imagen del logo Pequeña y luego el css(logo-img) -->
+        <div class ="solologo"> 
+            
+                <img src="img/logoguanabana.png" width="150px" alt="img de logo">
+          
+       </div>
+
+        <section class="menu container">
+            
+          <id class="logo-letras"> <a href="#INICIO" class="logo"> guana-baná</a>  </id> 
+            
+            <input type="checkbox" id="menu"/>
+                <label for="menu">
+                    <img src="img/menu.png" class="menu-icono" alt="boton de menu o comentario">
+                </label>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">PRODUCTOS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </section>
+
+        <section class="header-content container">
+            <div class="header-txt">
+                <h1>
+                    Guanabana!
+                </h1>
+                <p>Estamos a punto de Lanzar nuestro nuevo Local. 
+                    Estaremos Ubicados en Puente Aranda-Bogota.
+                    Conoce mas de Guana-Baná.
+                    Conoce los Nuevos productos, adquiere descuentos,y unete a nuestro gran inauguracion!!!
+                    <a>RELLENA EL FORMULARIO!!!!!</a>
+                </p>
+                <a href="#" class="btn-1"> SECCION MENU </a>
+            </div>
+        </section>
+     
+
+
+        <section class="images">
+            <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/an instagram post  about the launch of our new location about guanabana (1).png" alt="imagen1">
+                            <h3>Jugo</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/an instagram post  about the launch of our new location about guanabana.png" alt="imagen2">
+                            <h3>Postres</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Designer.png" alt="imagen3">
+                            <h3>Guanabanazo</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/guanabanasola.png" alt="imagen4">
+                            <h3>Dulce de GUanabana</h3>
+                        </div>
+                    </div>
+             </div>
+        </section>
+
+        <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+
+    </header>
+
+   
+
+    <section class="contact-section" id="contact section">
+        <div class="contact-headings">
+          <h2>Sigue en Contacto</h2>
+        </div>
+    </section>
+      
+        
+
+      <div class="container-contact">
+    
+
+        <div class="contact-form">
+          <h4> Enviame un mensaje...</h4>
+<!-- --------------------------------FORMULARIO--------------------------------------------------- -->
+          <form class="form">
+              <input type="text" name="nomest" id="nomest" placeholder="Nombre">
+              <input type="email" name="guardadoemail" id="guardadoemail" placeholder="Email">
+              <textarea placeholder="Pon tu Mensage">
+              </textarea>
+
+                <button type="button" class="btn-submit" onclick="captura1()">
+                  Enviar Mensaje
+                </button>
+              
+          </form>
+
+
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+          <script src="script.js" ></script>
+
+
+</body>
+
+
+</html>
